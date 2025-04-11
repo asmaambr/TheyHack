@@ -1,0 +1,21 @@
+{
+  "name": "iot-backend",
+  "version": "1.0.0",
+  "description": "IoT backend for sensor data collection and storage",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "nodemon index.js"
+  },
+  "dependencies": {
+    "@supabase/supabase-js": "^2.39.3",
+    "dotenv": "^16.3.1",
+    "mqtt": "^5.3.1"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.2"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+} 

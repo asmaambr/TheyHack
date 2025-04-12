@@ -13,4 +13,4 @@ Access granted/denied feedback with live display
 
 Uses DeepFace for facial comparison
 
-Compatible with standard webcams, we could not test the software since the camera didn't work, it was givoing corrupted output
+Compatible with standard webcams, we could not test the software since the camera didn't work, it was giving corrupted output

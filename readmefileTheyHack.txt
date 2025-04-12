@@ -1,87 +1,108 @@
-# 🔐💡 Intelligent Power & Security System for Server Rooms and Call Centers
+Intelligent Power & Security System for Server Rooms and Call Centers
+Overview
+This project presents a smart, AI-powered system designed to monitor and safeguard server rooms and call centers from environmental risks and unauthorized access. It offers intelligent fan control, anomaly detection, and real-time monitoring through a web-based dashboard. The system seamlessly integrates IoT, AI, and security functionalities.
 
-## 📌 Overview
-This project is a smart, AI-powered system designed to monitor and protect server rooms and call centers from environmental hazards and unauthorized access. It intelligently controls fan speed, detects anomalies, and presents real-time data on a web dashboard — combining IoT, AI, and security features.
+System Architecture
+1. Sensor and Security Layer
+Temperature Sensor (DHT11)
 
----
+Humidity Sensor
 
-## 🧱 System Architecture
+Dust Sensor (planned for future implementation)
 
-### 1. Sensor & Security Layer
-- 🌡️ Temperature Sensor (DHT11)
-- 💧 Humidity Sensor
-- 🌫️ Dust Sensor *(future feature)*
-- 💦 Water Leakage Sensor
-- 🔥 Smoke Sensor (AI-analyzed)
-- 🕵️ Motion Sensor (PIR)
-- 📷 Camera with DeepFace for facial recognition
-- 🆔 RFID Reader (authorized access)
+Water Leakage Sensor
 
-### 2. Microcontroller Layer
-- 🧠 ESP32 + Arduino Uno
-- Reads sensor/security inputs
-- Controls:
-  - 🔁 Fan (with AI-based speed control)
-  - 📺 LCD Display
-- Publishes data to MQTT Broker
+Smoke Sensor (analyzed via AI)
 
-### 3. Communication Layer
-- 📡 MQTT Protocol
-  - Secure, lightweight messaging
-  - Topics: temperature, humidity, fan speed, alerts, access logs, etc.
+Motion Sensor (PIR)
 
-### 4. AI + Control Logic Layer
-- 🧠 AI Model (Reinforcement Learning)  
-  Predicts optimal fan speed based on environmental data
-- ⚙️ Fuzzy Logic Controller  
-  Smooth, adaptive fan control
-- 🚨 Anomaly Detection Model  
-  Triggers alerts for overheating, intrusion, or water leakage
+Camera with facial recognition (DeepFace)
 
-### 5. User Interface Layer
-- 📊 Web Dashboard
-  - Real-time sensor data
-  - Access logs
-  - Alerts and system control
+RFID Reader for authorized access
 
----
+2. Microcontroller Layer
+ESP32 and Arduino Uno
 
-## ✅ Key Features
-- 🔁 AI-controlled fan speed (not just ON/OFF)
-- 🔒 RFID & Camera (DeepFace) for access control
-- ⚠️ Real-time anomaly detection
-- 🌐 Web-based dashboard via MQTT
-- 📦 Modular and scalable IoT architecture
+Interfaces with all sensors and security modules
 
----
+Controls:
 
-## 🛠️ Technologies Used
-- Hardware: ESP32, Arduino Uno, DHT11, PIR, RFID-RC522, camera, smoke sensor
-- Software: Python, Arduino IDE, MQTT, Flask (or Node.js), HTML/CSS/JS
-- AI/ML: Reinforcement Learning, Fuzzy Logic, DeepFace for facial recognition
-- Tools: VS Code, Google Colab, PlatformIO, Mosquitto Broker
+Fan with AI-based speed adjustment
 
----
+LCD display for on-site data visualization
 
-## 💡 Unimplemented (Future) Features
-Due to time and component limitations:
-- 🌫️ Dust Sensor integration (e.g., DSM501A)
-- 💧 Smart Vacuum Pump for water removal
-- ⚡ Voltage Monitoring (e.g., ZMPT101B + ACS712)
-- 📱 Mobile App for remote alerts
-- 🔋 Power backup and UPS integration
-- 🧰 Custom hardware enclosure
+Publishes data to an MQTT broker
 
+3. Communication Layer
+MQTT Protocol
 
-## 🔮 Future Improvements
-- Integrate machine learning for smarter decision-making
-- Add voice or SMS alert system
-- Use edge AI boards (e.g., Jetson Nano) for better face recognition
-- Full IoT platform deployment with mobile and cloud
+Lightweight and secure messaging
 
----
+Topics include temperature, humidity, fan speed, alerts, and access logs
 
-## 👥 About Us
-We are a passionate team of developers interested in AI, IoT, and embedded systems. Our goal is to build smart, efficient, and secure systems tailored for high-risk environments like server rooms and call centers.
+4. AI and Control Logic Layer
+AI Model (Reinforcement Learning)
+Predicts optimal fan speed based on environmental conditions
 
----
+Fuzzy Logic Controller
+Provides smooth and adaptive fan control
+
+Anomaly Detection Module
+Alerts for events such as overheating, intrusion, or water leakage
+
+5. User Interface Layer
+Web-based Dashboard
+
+Real-time sensor data visualization
+
+Access log review
+
+System alerts and control panel
+
+Key Features
+Intelligent fan speed regulation using AI models
+
+Integrated access control with RFID and facial recognition
+
+Real-time anomaly detection for critical risks
+
+Modular, scalable IoT architecture
+
+Remote monitoring via a web dashboard connected through MQTT
+
+Technologies Used
+Hardware: ESP32, Arduino Uno, DHT11, PIR, RFID-RC522, camera module, smoke sensor
+
+Software: Python, Arduino IDE, MQTT, Flask or Node.js, HTML/CSS/JavaScript
+
+AI/ML: Reinforcement Learning, Fuzzy Logic, DeepFace for facial recognition
+
+Development Tools: Visual Studio Code, Google Colab, PlatformIO, Mosquitto MQTT Broker
+
+Planned Features (Future Work)
+Due to time and hardware constraints, the following features are planned for future development:
+
+Dust sensor integration (e.g., DSM501A)
+
+Smart vacuum pump for automatic water drainage
+
+Voltage monitoring (e.g., ZMPT101B and ACS712)
+
+Mobile application for remote notifications
+
+Power backup system and UPS integration
+
+Custom-designed hardware enclosure for protection and portability
+
+Future Enhancements
+Improved decision-making using advanced machine learning algorithms
+
+Voice or SMS-based alert system for critical notifications
+
+Edge AI integration (e.g., Jetson Nano) for enhanced facial recognition
+
+Full deployment on an IoT platform with mobile and cloud support
+
+About Us
+We are a dedicated team of developers with a passion for artificial intelligence, IoT, and embedded systems. Our mission is to create intelligent, efficient, and secure solutions tailored to high-risk environments such as server rooms and call centers.
+
